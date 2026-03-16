@@ -1,0 +1,80 @@
+/* Загальний стиль */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #fdeff4;
+    margin: 0;
+    color: #4a3a40;
+}
+
+/* Header */
+header {
+    background-color: #f8d7e3;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 3px solid #e6a8c3;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 34px;
+    color: #a64d79;
+}
+
+/* Основний контейнер */
+main {
+    max-width: 1800px;
+    margin: 30px auto;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* два блоки в рядку */
+    gap: 20px;
+}
+
+/* Header і Footer на всю ширину */
+header, footer {
+    grid-column: 1 / -1;
+}
+
+/* Блоки */
+section {
+    background: white;
+    padding: 20px;
+    border: 2px solid #f2b6cc;
+    border-radius: 10px;
+}
+
+/* Заголовки */
+h2 {
+    margin-top: 0;
+    color: #a64d79;
+    border-bottom: 2px solid #f2b6cc;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #7a4c5f;
+}
+
+/* Списки */
+ul {
+    padding-left: 18px;
+}
+
+/* Посилання */
+a {
+    color: #c94f7c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #f8d7e3;
+    padding: 12px;
+    border-top: 3px solid #e6a8c3;
+}
