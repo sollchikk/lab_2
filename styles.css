@@ -25,9 +25,8 @@ main {
     max-width: 1800px;
     margin: 30px auto;
     padding: 10px;
-
     display: grid;
-    grid-template-columns: 1fr 1fr; /* два блоки в рядку */
+    grid-template-columns: 1fr 1fr; 
     gap: 20px;
 }
 
@@ -77,4 +76,112 @@ footer {
     background-color: #f8d7e3;
     padding: 12px;
     border-top: 3px solid #e6a8c3;
+}
+
+/* Відгуки */
+#reviews div { 
+    margin-bottom: 15px; 
+    padding: 10px; 
+    border: 1px solid #f2b6cc; 
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.6);
+}
+
+/* Модальне вікно */
+#modal {
+    display: none;
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    color: #4a3a40;
+    padding: 25px;
+    border: 2px solid #f2b6cc;
+    border-radius: 10px;
+    z-index: 1000;
+    width: 350px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+#modal input, #modal textarea {
+    display: block; 
+    margin: 10px 0; 
+    width: 100%; 
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+#modal button {
+    margin-top: 5px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #a64d79;
+    color: white;
+    cursor: pointer;
+}
+#modal button:hover {
+    background-color: #c94f7c;
+}
+
+/* Кнопка перемикання теми */
+#toggleTheme {
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    background-color: #a64d79;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+#toggleTheme:hover {
+    background-color: #c94f7c;
+}
+/* Темна тема */
+.dark-mode {
+    background-color: #2c2c2c;
+    color: #f5f5f5;
+}
+
+.dark-mode header {
+    background-color: #3a3a3a;
+    border-bottom: 3px solid #555;
+}
+
+.dark-mode footer {
+    background-color: #3a3a3a;
+    border-top: 3px solid #555;
+}
+
+.dark-mode section {
+    background-color: #444;
+    border-color: #666;
+}
+
+.dark-mode a {
+    color: #f7a1c2;
+}
+
+/* Світла тема */
+.light-mode {
+    background-color: #fdeff4;
+    color: #4a3a40;
+}
+
+.light-mode header {
+    background-color: #f8d7e3;
+    border-bottom: 3px solid #e6a8c3;
+}
+
+.light-mode footer {
+    background-color: #f8d7e3;
+    border-top: 3px solid #e6a8c3;
+}
+
+.light-mode section {
+    background-color: white;
+    border-color: #f2b6cc;
+}
+
+.light-mode a {
+    color: #c94f7c;
 }
