@@ -6,20 +6,19 @@ body {
     color: #4a3a40;
 }
 
-/* Header */
 header {
     background-color: #f8d7e3;
     text-align: center;
     padding: 25px;
-    border-bottom: 3px solid #e6a8c3;
+    border-bottom: none;
 }
 
 header h1 {
     margin: 0;
     font-size: 34px;
     color: #a64d79;
+    text-decoration: underline;
 }
-
 /* Основний контейнер */
 main {
     max-width: 1800px;
@@ -47,8 +46,7 @@ section {
 h2 {
     margin-top: 0;
     color: #a64d79;
-    border-bottom: 2px solid #f2b6cc;
-    padding-bottom: 5px;
+    border-bottom: none;
 }
 
 h3 {
