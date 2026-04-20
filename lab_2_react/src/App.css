@@ -1,42 +1,82 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+    margin: 0;
+    padding: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-container {
+    background-color: #fdeff4;
+    color: #4a3a40;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+    flex-grow: 1;
 }
 
-.card {
-  padding: 2em;
+
+.dark-mode .app-container {
+    background-color: #1a1a1a !important;
 }
 
-.read-the-docs {
-  color: #888;
+.dark-mode header,
+.dark-mode footer {
+    background-color: #252525 !important;
+    border-color: #444 !important;
+    color: #ffffff !important;
+}
+
+.dark-mode section,
+.dark-mode .card {
+    background-color: #2d2d2d !important;
+    border-color: #f2b6cc !important;
+    color: #ffffff !important;
+}
+
+    .dark-mode section div,
+    .dark-mode [class*="bg-white"] {
+        background-color: #383838 !important;
+        color: #f0f0f0 !important;
+        border-color: #444 !important;
+    }
+
+.dark-mode .skill-badge,
+.dark-mode span[class*="bg-"] {
+    background-color: #a64d79 !important;
+    color: #ffffff !important;
+    border: 1px solid #f2b6cc !important;
+}
+
+.dark-mode p,
+.dark-mode li,
+.dark-mode span,
+.dark-mode strong {
+    color: #f0f0f0 !important;
+}
+
+.dark-mode h2,
+.dark-mode h3 {
+    color: #ffb1cc !important;
+}
+
+#toggleTheme {
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background-color: #a64d79;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
 }
